@@ -1,12 +1,10 @@
 import React from 'react';
 import './App.css';
+import MessageHistory from './components/MessageHistory/MessageHistory';
+import { messages } from './data/messages';
 
 function App() {
-  return (
-    <div>
-      chat
-    </div>
-  );
+  return <MessageHistory list={messages} />
 }
 
 export default App;
